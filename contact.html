@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JavaScript Trivia Game</title>
+    <script src="js/knockout-3.4.2.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+                <a href=""><img src="images/h3.png"></a>
+              
+        </header>
+        <nav >
+            <ul >
+                <li>  <a href="index.html">Home    </a></li>
+                <li><a href="about.html"> About   </a></li>
+                <li> <a href="contact.html"> contact</a></li>
+            </ul>
+    </nav>
+   <div role="main" class="container">
+    <br /><br />
+    <h2>Group Contact</h2>
+    <div class="form-group" id="sample">
+    <label for="txtFirstName">First Name:</label>
+    <input type="text" class="form-control alert-warning" data-bind="value: firstName" id="txtFirstName"/>
+    </div>
+    <div class="form-group" id="sample">
+    <label for="txtLastName">Last Name:</label>
+    <input type="text" class="form-control alert-warning" data-bind="value: lastName" id="txtLastName"/>
+    </div>
+    <div class="form-group" id="sample">
+            <label for="txtEmail">Email:</label>
+            <input type="text" class="form-control alert-warning" data-bind="value: email" id="txtEmail"/>
+    </div>
+    <div class="form-group" id="sample">
+        <label for="txtMessage">Message:</label>
+        <textarea type="text" class="form-control alert-warning" data-bind="value: message" id="txtMessage"></textarea>
+     </div>
+    <div class="form-group" id="sample">
+        <label for="txtRadio">Have you visited the Website before?:</label>
+        Yes<input type="Radio"  class="form-control alert-warning" data-bind="value: yes" id="txtYes"/>
+        No<input type="Radio"  class="form-control alert-warning" data-bind="value: no" id="txtNo"/>
+    </div>
+    <div class="form-group" id="sample">
+       
+        <p><button class="form-control alert-warning" data-bind="value: send" id="txtSend">Send</button><span class="important">*</span><span id="required"> Required</span></p>
+    </div>
+   </div>
+    <script>
+        var personViewModel = {
+            firstName: "Alsaddig,Thip,Andrew",
+            lastName: "Ibrahim,Rattanavilay ,Weilbacher",
+            email:"GroupB@domain.com",
+            message:"message",
+            yes:"yes",
+            no:""
+            };
+            ko.applyBindings(personViewModel);
+        
+    </script>
+     <footer class="footer">
+        <span class="footer__text">Group B: Andrew Weilbacher - Thip Rattanavilay - Alsaddig Ibrahim </span>
+</footer>
+</div>
+   </body>
+   </html>

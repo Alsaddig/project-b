@@ -2,7 +2,12 @@
 <html>
 <head>
     <title>JavaScript Trivia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bubblegum+Sans" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script type='text/javascript' src='knockout-3.5.0.js'></script>
+    <script src="https://surveyjs.azureedge.net/1.0.44/survey.ko.js"></script>
+
     <link rel="stylesheet" href="css/styles.css">
     <title>JavaScript Trivia Game</title>
 </head>
@@ -11,7 +16,11 @@
     <div id="container">
 
         <header>
-                <img src="images/h2.png">
+            
+                <img src="https://media0.giphy.com/media/aMIImk0BKdik8/giphy.gif" class="galleryPic" alt="JavaScript Image" width="315" height="200">
+                <img src="https://media1.giphy.com/media/od22gJJ5IdwFq/source.gif" class="galleryPic" alt="JavaScript Image"  width="320" height="200">
+                <img src="https://media0.giphy.com/media/PXGvUV7Znz5wQ/giphy.gif" class="galleryPic" alt="JavaScript Image"  width="310" height="200">
+         
               
         </header>
         <nav >
@@ -21,49 +30,26 @@
                 <li> <a href="contact.html"> contact</a></li>
             </ul>
         </nav>
-            <article>
-                  
-                    <table style="width:100%">
-                           
-                            <tr>
-                                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/N780vk1onZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                            </tr>
-                                <tr>
-                                    <td>Quiz</td>                             
-                           
-                            </tr>
-                            <tr><td> <input type="submit" value="Guiz Start"></td>                               
-                            </tr>
-                          </table>
-                
-            </article>
-            <aside>
-                <div id="" class = "">
-                    <table>
-                    <tr>
-                        <th><h1>MOVIE TRIVIA</h1></th>
-                    </tr>
-                     <tr>
-                        <td>
-                        <a href="80s.html"><h3>MOVIE TRIVIA 80's</h3></a>       
-                        </td>
-                    </tr>
-                     <tr>
-                         <td>
-                             <a href="90s.html"><h3>MOVIE TRIVIA 90's</h3></a>      
-                         </td>
-                    </tr>
-                   
-                    <tr>
-                            <td><a href=""><img src="images/b.jpg"></a></td>
-                          
-                        </tr>
-                   
-                    </table>
-                </div>     
-                
-            </aside>
-               
+        
+        <center class = "quiz">
+            <h1>Movies Trivia Game</h1>
+            <div><img src="images/b5.jpg"></div>
+           
+                                   
+                <br/>
+                <div id="surveyElement" class="surveyElement"></div>
+                <div id="surveyResult"></div>
+        
+            <script type="text/javascript" src="js/main.js"></script>
+        </center>
+        <br />
+        <br>
+        <div> 
+        <center>
+            <br>
+                <button onclick="myFunction()">START OVER</button>
+            </center>
+        </div>
         
 
         <script type="text/javascript" src=""></script>

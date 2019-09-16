@@ -1,14 +1,4 @@
-.header {
-    display: flex;
-    flex-direction: column;
-    height: 70px;
-    width: 100%;
-    align-items: center;
-    padding: 50px 0;
-    font-size: 5em;
-    background-color: lightblue;
-    color: rgb(252, 252, 252);
-}
+
 @font-face{
     font-family:'rockwell-slab';
     src:url(fonts/rockwell-slab.woff),
@@ -29,11 +19,27 @@ background-color: white;
 
 }
 header{
-width:940px;
+width:960px;
 
-padding:0px;
+
+display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+   
+    background-image: url(http://onesheetdesign.com/wp-content/uploads/movie_poster_design.jpg);
+    background-attachment: fixed;
+    font-family: "Bubblegum Sans"; 
+    font-size: 5em; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 80;
+    
+
+
 
 }
+
 nav
 {
 width:950px;
@@ -41,7 +47,7 @@ background-color:blue;
 padding:5px;
 color:white;
 }
-}
+
 nav ul{
 color:white;
 padding:0px;
@@ -66,6 +72,9 @@ display:inline-block;
 text-decoration:none;
     
 }
+
+
+
 
 
 
@@ -140,22 +149,61 @@ color:blue;
 h3{
     color:blue;
     }
-@media(max-width: 480px) {
-    body {
-        background-color: lightblue;
-    }
+    @media (max-width: 600px) {
+    
     #container{
-    width:auto;
+    width:100%;
 
     }
     header{
     width:auto;
-
     }
+img{width:100%;}
     nav{
     width:auto;
 
     }
+    center{
+        width: 100%;
+    }
+    nav {
+					
+        margin-right:0px;
+        margin-left:0px;
+        border-top-left-radius:0;
+        border-top-right-radius:0;
+    }
+    nav > li {
+        float: none;
+    }
+    nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    nav li li a {
+    display: block;
+    background: white;
+    position: relative;
+    z-index:100;
+    
+        }
+     nav ul {
+        display: block;
+        width: 100%;
+    }
+    nav a:link
+    {
+        display:block;
+        
+        border-bottom:1px solid black;
+        
+    }
+
+    
     section{
     width:auto;
 
@@ -172,7 +220,7 @@ h3{
 
     }
     footer{
-    width:auto;
+    width:100%;
 
     }
     
